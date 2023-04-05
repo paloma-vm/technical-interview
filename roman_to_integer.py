@@ -32,7 +32,7 @@ def romanToInt(s: str) -> int:
     # initialize the previous value as 0
     prev_value = 0
     # iterate over the string from right to left
-    # using a reverse slice (add more info here)
+    # using a reverse slice (starting at last element of the list)
     for c in s[::-1]:
         # for each character, c, look up its value in the 
         # dictionary roman_values
@@ -55,3 +55,6 @@ def romanToInt(s: str) -> int:
 # Explanation:
 # This is one way to solve this problem, using a dictionary to
 # store the values of each Roman numeral.  
+# -------------------------
+output = romanToInt('XXIV')
+print(output)
