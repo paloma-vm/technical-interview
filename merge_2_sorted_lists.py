@@ -17,12 +17,12 @@ class ListNode():
 # define a function that merges the lists
 def mergeTwoLists(l1: ListNode, l2: ListNode) -> ListNode:
     # Create a dummy node to start the result linked list
-    dummy = ListNode(0)
+    dummy = ListNode(0) # O(n)
     # Create a pointer to traverse the result linked list
     current = dummy
     
     # Traverse both linked lists until one of them is completely traversed
-    while l1 and l2:
+    while l1 and l2: # O(n)
         # Compare the values of the head nodes of the linked lists
         if l1.val <= l2.val:
             # Add the smaller value to the result linked list
@@ -45,6 +45,9 @@ def mergeTwoLists(l1: ListNode, l2: ListNode) -> ListNode:
     
     # Return the head of the result linked list (excluding the dummy node)
     return dummy.next
+
+
+# Time complexity O(n) because it depends how long the longest list is
 
 
 # Explanation:

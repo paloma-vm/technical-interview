@@ -16,9 +16,9 @@
 
 # Solution with pseudocode:
 # define a function that takes a string, s, and returns an integer
-def romanToInt(s: str) -> int:
+def roman_to_int(s: str) -> int:
     # create a dictionary to store the values of each Roman numeral
-    roman_values = {
+    roman_values = {  # assigning O(1)
         "I": 1,
         "V": 5,
         "X": 10,
@@ -33,7 +33,7 @@ def romanToInt(s: str) -> int:
     prev_value = 0
     # iterate over the string from right to left
     # using a reverse slice (starting at last element of the list)
-    for c in s[::-1]:
+    for c in s[::-1]: # O(n) loop
         # for each character, c, look up its value in the 
         # dictionary roman_values
         curr_value = roman_values[c]
@@ -50,11 +50,13 @@ def romanToInt(s: str) -> int:
     # return the result
     return result
 
-
+# Time complexity O(n) because it depends how long the roman numeral is
 
 # Explanation:
 # This is one way to solve this problem, using a dictionary to
 # store the values of each Roman numeral.  
 # -------------------------
-output = romanToInt('XXIV')
+output = roman_to_int('XXIV')
+print(output)
+output = roman_to_int('XXX')
 print(output)

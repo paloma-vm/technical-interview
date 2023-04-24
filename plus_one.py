@@ -31,12 +31,13 @@ from typing import List
 def plusOne(digits: List[int]) -> List[int]:
     # get the length of the list digits and assign the value
     # to the variable n
-    n = len(digits)
+    n = len(digits) # len() is O(1) because the computer stores the list
+    # as a table and just has to look it up
     # 
     carry = 1 # this is the value that is added to the 
     # least significant digit (the last element in the list)
     # loop through the digits list from right to left with step of -1
-    for i in range(n-1, -1, -1): # start, stop, step
+    for i in range(n-1, -1, -1): # start, stop, step  O(n)
         # (stop value is exclusive, in this case, of -1, i.e., the last index)
         # add the value of carry to each digit
         digits[i] += carry
@@ -54,6 +55,9 @@ def plusOne(digits: List[int]) -> List[int]:
         digits.insert(0, 1) # at index zero, insert 1
     # return the updated list
     return digits
+
+
+# Time complexity O(n) because of the loop
 
 # Explanation:
 # 
@@ -74,6 +78,10 @@ def plusOne(digits: List[int]) -> List[int]: # pylint: disable=[E0102:function-r
     if carry:
         digits.insert(0, 1)
     return digits
+
+
+
+
 
 # Try it:
 # ----------------------------------2
