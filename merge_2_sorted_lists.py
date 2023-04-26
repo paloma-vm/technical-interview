@@ -1,3 +1,4 @@
+#Difficulty level: Easy
 # Question:
 # Merge two sorted linked lists (using Python)
 # If you are given two sorted linked lists, write a Python function 
