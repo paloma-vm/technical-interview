@@ -1,0 +1,22 @@
+Here are the notes I wrote while recording 
+the practice interview for [video #2](https://grain.com/share/recording/0c351052-6708-4892-880f-e9f795362808/mH1jK4hwnGfHUFWLrzJI5zWOfXvG3NvSIsvBahvO):
+
+How would you optimize a website’s performance?
+
+ E.g Image heavy site
+
+Reduce number of images
+Compressed 
+Responsive design
+Caching
+Minimize JS and CSS
+Use framework like React because it is already optimized
+Lazy loading
+Use CDN 
+
+
+What tools or techniques do you use to measure website performance 
+and how do you interpret the results?
+
+Tools to measure performance:
+	Lighthouse browser extension
