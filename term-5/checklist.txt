@@ -1,0 +1,8 @@
+1. Restate question
+2. Ask clarifying questions
+3. State assumptions
+4. Think through process out loud
+    4a. Brainstorm solution ideas
+    4b. Explain your rationale
+    4c. Discuss tradeoffs
+    4d. Suggest improvements
