@@ -35,8 +35,10 @@
  * @return {Function} counter
  */
 const createCounter = function(n) {
-    return function counter() {
+    return function() {
+    // return function counterFunc() {  could also name the function, e.g. counterFunc
         return n++ // n is returned and then incremented
+                    // because n++ is not assigned to a varable?
     }
 };
     // written as anonymous arrow function: 
