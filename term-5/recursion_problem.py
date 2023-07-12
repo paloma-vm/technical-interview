@@ -1,15 +1,35 @@
-""" Create a function that returns the factorial of any positive input number
-Helpful tip: Try to solve the problem comfortably in code before trying it recursively!
-Factorial is:
+# example: count Russian dolls
+    # asumption: can't have zero dolls
 
-4! ==> 4 x 3 x 2 x 1 """
+def countRussianDolls(doll):
+    if (doll == 1):
+        return 1
+    else:
+        answer = 1 + countRussianDolls(doll -1)
+        print(answer)
+        return answer
+    
+# now do recursively
+# function that counts down from a number
+def countDown(n):
+    if (n <= 0): # base case
+        print('Done')
+    else: # subproblem
+        print(n)
+        countDown(n-1)
 
-""" What do I need to do? Action plan? """
+# TEST
+countRussianDolls(5)
+print('*************')
+countDown(5)
 
-# Step 1: Restate question
-# Return n!
-# Step 2: Ask Clarifying Questions
-# So we need to return n factorial, where n is any positive input number
+# Problem
+# Create a function that returns the factorial of any positive input number
+# Helpful tip: Try to solve the problem comfortably in code before trying it recursively!
+
+# We did this problem with Salomon earlier this term. 
+# I did the problem in term-5/practice_2.py
+
 # Is the number an integer or can it be float? => use integers
 # Step 3: Write out action plan
     # Take number n
@@ -55,8 +75,3 @@ n_factorial(4)
 print('RECURSIVE SOLUTION:')
 output = n_factorial_recursive(4)
 print(output)
-
-# If it doesn’t work
-# Step 5: Debug
-# - What worked, What didn’t
-# Repeat process
